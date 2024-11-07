@@ -10,6 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { 
+            theme: {
+                extend: {
+                    spacing:{
+                        "46": "46px"
+                    }
+
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -26,6 +39,22 @@
             light_mode
         </span>
     </header>
+    <main class=" pt-[50px]  ">
+        <h1 class="flex justify-between ">Tarefas
+            <button class="h-46 bg-pink-500 hover:bg-pink-700 duration-200 text-white rounded-md flex items-center gap-3 px-5 hover:shadow-lg hover:shadow-pink-300 ">
+                <span class="material-symbols-outlined">add_circle
+                 </span>
+                 Nova Tarefa
+            </button>
+        </h1>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-">
+            <li class="sha rounded-md p-4">1</li>
+            <li class="sha rounded-md p-4">2</li>
+            <li class="sha rounded-md p-4">3</li>
+            <li class="sha rounded-md p-4">4</li>
+            <li class="sha rounded-md p-4">5</li>
+        </ul>
+    </main>
 </body>
 
 </html>
